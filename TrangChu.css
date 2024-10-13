@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./Images/beach.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    background-color: rgba(240, 248, 255, 0.65);
+    /* background-color: aliceblue; */
+    display: flex;
+    width: 100%;
+    height: 160px;
+}
+.left{
+    width: 20%;
+}
+.left img{
+    height: 100%;
+    width: auto;
+    border-radius: 10px;
+}
+.right{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right a{
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.right a:hover{
+    background-color: white;
+}
+.main{
+    flex: 1;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pic{
+    flex: 1;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+.pic img{
+    width: 100%;
+    height: auto;
+    border: 5px solid aliceblue;
+    border-radius: 20px;
+}
+.nav-but{
+    margin: 0 150px;
+    background-color: rgba(240, 248, 255, 0.7); 
+    border: none; 
+    border-radius: 50px;
+    padding: 9px 15px;
+    cursor: pointer; 
+}
+.nav-but:hover{
+    background-color: rgb(252, 252, 252);
+}
