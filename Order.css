@@ -139,12 +139,14 @@ article .product{
     flex-wrap: wrap;
 }
 article .container{
+    display: flex;
+    flex-direction: column;
     background-color: #f5d2c4;
     border-radius: 15px;
     width: 150px;
-    height: fit-content;
+    height: 230px;
     padding: 5px 8px;
-    margin: 10px auto;
+    margin: 10px 5px;
     box-shadow: 1px 1px 5px 0 rgb(122, 122, 122);
     cursor: pointer;
 }
@@ -155,19 +157,23 @@ article .container{
 .container img{
     border-radius: 15px;
     width: 100%;
-    max-width: 100%;
-    height: fit-content;
+    height: auto;
+    max-height: 140px;
 }
 .info{
+    flex: 1;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 .info h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
     margin: 5px 0;
+    background-color: rgba(231, 247, 250, 0.3);
+    border-radius: 6px;
 }
-.info button{
+.container button{
     align-self: end;
     width: 20px;
     height: 20px;
@@ -177,10 +183,10 @@ article .container{
     border: 1px solid #ff7440;
     cursor: pointer;
 }
-.info button:hover{
+.container button:hover{
     background-color: whitesmoke;
 }
-.info img{
+.container button img{
     width: 100%;
 }
 /* CART */
