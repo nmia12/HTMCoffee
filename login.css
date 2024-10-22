@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-image: url(./IMG/loginbg.png);
+    background-size: contain;
+    color: #552f08;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background-color: #f1c7b7;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 0 10px 0 #78625b;
+}
+header img{
+    height: 100%;
+    width: auto;
+}
+main{
+    flex: 1;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 120px;
+}
+.logo img{
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+}
+main .loginBox{
+    background-color: rgba(241, 227, 222, 0.6);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 30px 40px;
+    width: 500px;    
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.loginBox h2{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 15px;
+    padding: 5px 30px;
+    margin-bottom: 30px;
+
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.loginBox input{
+    font-size: 15px;
+    width: 100%;
+    background-color: aliceblue;
+    margin-bottom: 10px;
+    padding: 5px 5px;
+    outline: none;
+    border: 1px solid #cfb1a7;
+    border-radius: 5px;
+}
+.loginBox a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #61564c;
+    cursor: pointer;
+}
+.loginBox a:hover{
+    text-decoration: underline #61564c;
+}
+.loginBox button{
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 5px 5px;
+    border: none;
+    cursor: pointer;
+}
+#login{
+    width: 30%;
+    margin: 10px 0;
+    background-color: #f5d2c4;
+    color: #552f08;
+    border: 1px solid #b1ada8;
+}
+#login:hover{
+    background-color: #552f08;
+    color:#f5d2c4;
+}
+#create{
+    width: 100%;
+    background-color: #f1ece1;
+    color: #281610;
+    border: 1px dashed #281610;
+}
+#create:hover{
+    background-color: #281610;
+    color: #f1ece1;
+}
+
+footer{
+    background-color: #f1c7b7;
+    height: 70px;
+    width: 100%;
+    box-shadow: -2px 0 10px 0 #78625b;
+}
