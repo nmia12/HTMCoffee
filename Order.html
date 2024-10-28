@@ -46,21 +46,12 @@
                 </div>
                 <div class="product">
                     <div class="container">
-                        <img src="./menu/CafeCotDua.jpg" alt="product">
-                        <div class="info">
-                            <h5>Ca phe sua</h5>
-                            <h6>40,000 VND</h6>
-                        </div>
-                        <button><img src="./IMG/plusicon.png" alt="plus"></button>
-                    </div> 
-
-                    <div class="container">
                         <img src="./menu/HongTraHatDe.jpg" alt="product">
                         <div class="info">
                             <h5>Hồng trà hạt dẻ</h5>
                             <h6>40,000 VND</h6>
                         </div>
-                        <button><img src="./IMG/plusicon.png" alt="plus"></button>
+                        <button aria-label="Thêm Hồng trà hạt dẻ vào giỏ hàng"><img src="./IMG/plusicon.png" alt="plus"></button>
                     </div> 
                     <div class="container">
                         <img src="./menu/TraDuaHawai (2).jpg" alt="product">
@@ -192,7 +183,6 @@
                         <button><img src="./IMG/plusicon.png" alt="plus"></button>
                     </div>
                 </div>
-
             </article>
             <article id="fruitTea">
                 <div class="type">
@@ -257,15 +247,15 @@
                 </div>
                 <div class="product">
                     <div class="container">
-                        <img src="" alt="product">
+                        <img src="./menu/bánhuachua.jpg" alt="product">
                         <div class="info">
-                            <h5></h5>
-                            <h6></h6>
+                            <h5>Bánh sữa chua</h5>
+                            <h6>50,000 VND</h6>
                         </div>
                         <button><img src="./IMG/plusicon.png" alt="plus"></button>
                     </div>
                     <div class="container">
-                        <img src="./menu/close-up-fancy-dessert.jpg" alt="product">
+                        <img src="./menu/moussematcha.jpg" alt="product">
                         <div class="info">
                             <h5>Mousse matcha</h5>
                             <h6>50,000 VND</h6>
@@ -273,18 +263,18 @@
                         <button><img src="./IMG/plusicon.png" alt="plus"></button>
                     </div>
                     <div class="container">
-                        <img src="" alt="product">
+                        <img src="./menu/sukem.jpg" alt="product">
                         <div class="info">
-                            <h5></h5>
-                            <h6></h6>
+                            <h5>Bánh su kem</h5>
+                            <h6>40,000 VND</h6>
                         </div>
                         <button><img src="./IMG/plusicon.png" alt="plus"></button>
                     </div>
                     <div class="container">
-                        <img src="" alt="">
+                        <img src="./menu/tiramisu.jpg" alt="">
                         <div class="info">
-                            <h5></h5>
-                            <h6></h6>
+                            <h5>Tiramisu</h5>
+                            <h6>50,000 VND</h6>
                         </div>
                         <button><img src="./IMG/plusicon.png" alt="plus"></button>
                     </div>
@@ -302,8 +292,15 @@
             <ul id="cartItems">
 
             </ul>
-            <p id="totalPrice">Thanh Toán: 0 VND</p>
+            <p id="totalPrice">Tổng: 0 VND</p>
+        <button onclick="payment()" id="paymentButton">Thanh toán</button>
+        <hr>
+        <div id="paymentOptions">
+            <h4>Chọn phương thức thanh toán:</h4>
+            <button onclick="cash()" id="codButton">Thanh toán khi nhận hàng</button>
+            <button onclick="qr()" id="bankTransferButton">VNPAY</button>
         </div>
+    </div>
 
     </main>
 
@@ -315,7 +312,7 @@
                 </div>
                 <article>
                     <h2>Về chúng tôi</h2>
-                    <p></p>
+                    <p>HTM Coffee ra đời với sứ mệnh mang đến trải nghiệm cà phê tuyệt vời. Chúng tôi cam kết sử dụng nguyên liệu chất lượng cao và quy trình chế biến tỉ mỉ để tạo ra những sản phẩm độc đáo. Đội ngũ nhân viên đam mê cà phê của chúng tôi luôn sẵn sàng phục vụ và tư vấn tận tình. Cảm ơn bạn đã đồng hành cùng HTM Coffee!</p>
                 </article>
                 <div class="contact">
                     <button><img src="./IMG/facebook.png" alt="facebook"></button>

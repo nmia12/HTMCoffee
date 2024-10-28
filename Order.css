@@ -6,7 +6,6 @@
 body{
     background-image: url(./IMG/orderbg.png);
     color: #552f08;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 /* HEADER */
 header{
@@ -202,7 +201,7 @@ article .container{
     border-bottom: none;
 }
 #totalPrice {
-    margin: 10px 5px 0 5px;
+    margin: 10px;
     font-size: 20px; 
     font-weight: bold; 
     color:#ff7440; 
@@ -210,6 +209,44 @@ article .container{
     padding: 5px;
     border-radius: 10px;
 }
+#paymentButton{
+    display: block;
+    margin: 15px auto;
+    background-color: #ff7440;
+    color: white;
+    border: 1px solid #fda586;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#paymentButton:hover{
+    background-color: #ff5a1e;
+}
+#paymentOptions{
+    background-color: #f3e2db;
+    border-radius: 10px;
+    padding: 8px 8px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#paymentOptions h4{
+    margin-bottom: 10px;
+}
+#paymentOptions button{
+    font-size: 13px;
+    color: #552f08;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #eeb8a3;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+#paymentOptions button:hover{
+    background-color: #f0a384;
+}
+
 
 
 /* FOOTER */
@@ -227,7 +264,8 @@ footer{
     display: flex;
 }
 footer article{
-    margin-bottom: 20px;
+    text-align: justify;
+    margin-bottom: 36px;
 }
 footer article h2{
     margin: 5px 0;;
@@ -237,6 +275,7 @@ footer .one{
     width: 35%;
     display: flex;
     flex-direction: column;
+    margin-right: 35px;
 }
 .one .image{
     width: 100%;
@@ -245,7 +284,7 @@ footer .one{
     justify-content: center;
 }
 .one .image img{
-    width: 40%;
+    width: 35%;
     height: auto;
 }
 .contact button{
@@ -279,86 +318,128 @@ footer hr{
 }
 /*  */
 @media(max-width: 768px){
+    /* MAIN */
     main{
         flex-direction: column;
     }
-    nav, .cart{
-        width: 50%;
-        margin: 20px 0;
+    /* NAV, CART */
+    main nav, main .cart{
+        width: 70%;
+        margin: 10px auto;
     }
-    .end{
+    
+    
+    .end {
         flex-direction: column;
     }
-    .end .one, .two{
+    footer article{
+        text-align: justify;
+        margin-bottom: 25px;
+    }
+    footer article h2{
+        margin: 5px 0;;
+    }
+    /* ONE */
+    footer .one{
+        width: 100%;
+        margin: 0;
+    }
+    .one .image{
         width: 100%;
     }
     .one .image img{
-        width: 200px;
-        height: auto;
+        width: 25%;
     }
+    .contact button{
+        margin: 0;
+    }
+    /* TWO */
+    footer ul{
+        margin-left: 35px;
+    }
+
 }
 @media(max-width: 480px){
-    nav, .cart{
-        width: 100%;
-    }
     header{
-        height: 40px;
+        height: 38px;
     }
     header .right{
         width: 100px;
     }
     header button{
         font-size: 10px;
-        width: 100%;
-        border: 1px solid #552f08;
+        padding: 3px 8px;
     }
     /* SEARCH */
     .search{
+        margin: 10px auto;
+        padding: 0;
         width: 200px;
-        height: 30px;
+        height: 20px;
+    }
+    .search input{
+        font-size: 11px;
+        height: 100%;
     }
     /* MAIN */
-    main{
-        padding: 0 10px;
-    }
     /* NAV, CART */
     main nav, main .cart{
-        padding: 10px 20px;
-        width: 100%;
-        border: 4px solid #f8e1d7;
-    }
-    .title h3{
-        font-size: 16px;
+        width: 85%;
+        margin: 20px auto;
     }
     .title img{
-        width: 15px;
-        height: 15px;
+        width: 20px;
+        height: 20px;
         margin-right: 10px;
     }
     /* NAV */
     main nav a{
-        margin-left: 25px;
-        font-size: 13px;
+        font-size: 14px;
+        margin-left: 30px;
     }
     nav li{
         padding: 2px;
     }
+    /* PRODUCT */
+    main section{
+        margin: 0 5px;
+    }
     article .type{
-        font-size: 17px;
+        font-size: 18px;
     }
     article .container{
-        width: 90px;
-        padding: 5px 5px;
+        font-size: 14px;
+        width: 140px;
+        height: 210px;
     }
-    .info{
-        font-size: 12px;
+    .container img{
+        max-height: 130px;
     }
-    .info button{
-        width: 15px;
-        height: 15px;
-        padding: 1px 1px;
+    .info h5{
+        height: 30px;
     }
-    .one .image img{
-        width: 130px;
+    .container button{
+        width: 18px;
+        height: 18px;
+        padding: 2px 2px;
     }
+    /* CART */
+    
+    #totalPrice {
+        font-size: 16px; 
+    }
+    #paymentButton{
+        font-size: 17px;
+    }
+    
+    
+    footer{
+        border-top: 5px solid #eeac92;
+        font-size: 13px;
+        padding: 0;
+    }
+    .one .image{
+        margin-bottom: 10px;
+    }
+    
 }

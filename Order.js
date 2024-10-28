@@ -1,32 +1,53 @@
-let cartItems = [];
 
-function updateCart() {
-    const cartList = document.getElementById('cartItems');
-    cartList.innerHTML = '';
-    let totalPrice = 0;
+const cartItemsContainer = document.getElementById('cartItems');
+const totalPriceElement = document.getElementById('totalPrice');
+let totalPrice = 0;
 
-    for (let i = 0; i < cartItems.length; i++) {
-        const listItem = document.createElement('li');
-        listItem.textContent = cartItems[i].name + ' - ' + cartItems[i].price + ' VND';
-        cartList.appendChild(listItem);
-        totalPrice += cartItems[i].price;
-    }
-    const totalPriceElement = document.getElementById('totalPrice');
-    totalPriceElement.textContent = 'Thanh Toán: ' + totalPrice + ' VND';
+
+function addToCart(productName, productPrice){
+    const li = document.createElement('li');
+    li.textContent = `${productName} - ${productPrice},000 VND`;
+    cartItemsContainer.appendChild(li);
+
+    totalPrice += productPrice;
+    totalPriceElement.textContent = `Tổng: ${totalPrice},000 VND`;
 }
-function addToCart(name, price) {
-    cartItems.push({name:name, price:price});
-    updateCart();
-}
-const buttons = document.querySelectorAll('.container button');
-for (let i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener('click', function(event) {
+
+const addButtons = document.querySelectorAll('.product button');
+
+for (let i = 0; i < addButtons.length; i++) {
+    addButtons[i].addEventListener('click', function(event){
         const productContainer = event.target.closest('.container');
-        const productName = productContainer.querySelector('h5').textContent;
-        const productPriceText = productContainer.querySelector('h6').textContent;
+        const productName = productContainer.querySelector('.info h5').textContent;
+        const productPrice = parseInt(productContainer.querySelector('.info h6').textContent.replace(' VND', ''));
 
-        const productPrice = parseInt(productPriceText.replace(/[^0-9]/g, ''), 10);
         addToCart(productName, productPrice);
     });
 }
+
+
+const paymentButton = document.getElementById('paymentButton');
+const paymentOptions = document.getElementById('paymentOptions');
+
+paymentOptions.style.display = 'none';
+function payment() {
+    if (cartItemsContainer.children.length === 0) {
+        alert('Bạn chưa thêm sản phẩm nào vào giỏ hàng!');
+    } else {
+        paymentOptions.style.display = 'block'; 
+    }
+}
+
+function cash() {
+    alert('Vui lòng thanh toán khi nhận hàng!')
+}
+
+function qr() {
+    alert('Quét mã qr bên dưới để thanh toán!')
+}
+
+
+
+
+
 
