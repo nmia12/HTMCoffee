@@ -10,7 +10,7 @@ let currentIndex = 0;
 function next() {
     currentIndex = currentIndex + 1;
 
-    if (currentIndex > slides.length) {
+    if (currentIndex > slides.length - 1) {
         currentIndex = 0;
     }
 

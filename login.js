@@ -18,13 +18,10 @@ function login() {
 
     const emailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
     if (!emailPattern.test(u)) {
-        alert('Vui lòng nhập email hợp lệ (gmail.com)');
+        alert('Email không hợp lệ!');
         return;
     }
 
     alert('Đăng nhập thành công!');
 }
 
-function createAccount() {
-    alert('Chưa cập nhật');
-}

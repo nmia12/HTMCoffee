@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Account</title>
+    <link rel="stylesheet" href="./create.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Poppins&family=Dancing+Script&family=Roboto&family=Lobster&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img src="./IMG/namelogo.png" alt="logo">
+    </header>
+    <main>
+        <form id="createAccountForm">
+            <h2>Create Your Account</h2>
+            <div class="input">
+                <div>
+                    <label for="username">Tên đăng nhập:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div>
+                    <label for="phone">Số điện thoại:</label>
+                    <input type="text" id="phone" name="phone" required>
+                </div>
+                <div>
+                    <label for="password">Mật khẩu:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div>
+                    <label for="confirmPassword">Nhập lại mật khẩu:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                <div>
+                    <label for="favoriteCoffee">Đồ uống yêu thích</label>
+                    <select id="favoriteCoffee" name="favoriteCoffee">
+                        <option value="espresso">Espresso</option>
+                        <option value="latte">Latte</option>
+                        <option value="cappuccino">Cappuccino</option>
+                        <option value="americano">Americano</option>
+                        <option value="mocha">Fruit Tea</option>
+                        <option value="mocha">Milk Tea</option>
+                    </select>
+                </div>
+            </div>
+            <button id="create" type="submit">Đăng kí</button>
+            <div class="logincontain">
+                <p>Bạn đã có tài khoản?</p>
+                <a href="./login.html">
+                    <button id="login" type="button">Đăng nhập</button>
+                </a>
+            </div>
+            <a id="back" href="./Order.html">Quay lại màn hình chính</a>
+        </form> 
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+    </footer>
+
+    <script src="create.js"></script>
+</body>
+</html>

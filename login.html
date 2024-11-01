@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="./login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Poppins&family=Dancing+Script&family=Roboto&family=Lobster&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -20,17 +22,20 @@
                 <input id="email" type="email" placeholder="Nhập email của bạn" required>
                 <input id="passWord" type="password" name="password" placeholder="Nhập mật khẩu" required>    
             </form>
-                <button id="login">Đăng nhập</button>
+                <button type="submit" id="login">Đăng nhập</button>
 
-                <a href="">Quên mật khẩu?</a>
+                <a id="forget" href="./forget1.html">Quên mật khẩu?</a>
                 <br>
 
-                <button id="create" onclick="createAccount()" type="submit">Tạo tài khoản mới</button>
-            
+                <a href="./createAccount.html">
+                    <button id="create" type="button">Tạo tài khoản mới</button>
+                </a>
+
+                <a id="back" href="./Order.html">Quay lại màn hình chính</a>
         </div>
     </main>
     <footer>
-
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
     </footer>
     <script src="login.js"></script>
 </body>

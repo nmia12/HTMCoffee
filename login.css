@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 body{
-    min-height: 100vh;
+    height: 100vh;
     background-image: url(./IMG/loginbg.png);
     background-size: contain;
     color: #552f08;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     display: flex;
     flex-direction: column;
 }
@@ -57,11 +57,11 @@ main .loginBox{
 }
 .loginBox h2{
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     border-radius: 15px;
     padding: 5px 30px;
     margin-bottom: 30px;
-
+    font-size: 30px;
 }
 form{
     width: 100%;
@@ -71,6 +71,7 @@ form{
     justify-content: center;
 }
 .loginBox input{
+    font-family: 'Quicksand', sans-serif;
     font-size: 15px;
     width: 100%;
     background-color: aliceblue;
@@ -80,17 +81,18 @@ form{
     border: 1px solid #cfb1a7;
     border-radius: 5px;
 }
-.loginBox a{
+#forget{
     font-size: 13px;
     text-decoration: none;
     color: #61564c;
     cursor: pointer;
 }
-.loginBox a:hover{
+#forget:hover{
     text-decoration: underline #61564c;
 }
 .loginBox button{
-    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
     border-radius: 5px;
     padding: 5px 5px;
     border: none;
@@ -107,6 +109,12 @@ form{
     background-color: #552f08;
     color:#f5d2c4;
 }
+a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
 #create{
     width: 100%;
     background-color: #f1ece1;
@@ -117,8 +125,24 @@ form{
     background-color: #281610;
     color: #f1ece1;
 }
+#back{
+    font-size: 15px;
+    text-decoration: none;
+    color: #61564c;
+    cursor: pointer;
+    margin-top: 40px;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+#back:hover{
+    background-color: rgba(255, 255, 255, 0.7);;
+}
 
 footer{
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #f1c7b7;
     height: 70px;
     width: 100%;
@@ -146,6 +170,18 @@ footer{
         padding: 20px 20px;
     }
     .loginBox h2{
+        font-size: 25px;
+    }
+    .loginBox input{
+        font-size: 14px;
+    }
+    #forget{
+        font-size: 11px;
+    }
+    .loginBox button{
+        font-size: 14px;
+    }
+    .loginBox h2{
         margin-bottom: 15px;
     }
     .loginBox a:hover{
@@ -154,8 +190,11 @@ footer{
     #login{
         width: 100%;
     }
-    
+    #back{
+        font-size: 13px;
+    }
     footer{
+        font-size: 14px;
         background-color: #f1c7b7;
         height: 100px;
         width: 100%;
@@ -178,9 +217,37 @@ footer{
         width: 100%;    
     }
     .loginBox h2{
+        font-size: 20px;
+    }
+    .loginBox input{
+        font-size: 12px;
+    }
+    #forget{
+        font-size: 10px;
+    }
+    #back{
+        font-size: 10px;
+    }
+    .loginBox button{
+        font-size: 12px;
+    }
+    .loginBox h2{
+        margin-bottom: 15px;
+    }
+    .loginBox a:hover{
+        text-decoration: underline #61564c;
+    }
+    #login{
+        width: 100%;
+    }
+    #back{
+        font-size: 13px;
+    }
+    .loginBox h2{
         margin-bottom: 20px;
     }
     footer{
+        font-size: 13px;
         height: 50px;
     }
 }

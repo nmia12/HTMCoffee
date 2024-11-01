@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-image: url(./IMG/loginbg.png);
+    background-size: contain;
+    color: #552f08;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Quicksand', sans-serif;
+}
+header{
+    background-color: #f1c7b7;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 0 10px 0 #78625b;
+}
+header img{
+    height: 100%;
+    width: auto;
+}
+main{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+#createAccountForm{
+    background-color: rgba(241, 227, 222, 0.6);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 20px 30px;
+    margin: 10px auto;
+    width: 500px;    
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+.input{
+    font-size: 15px;
+    margin: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.input input{
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    background-color: aliceblue;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 5px 5px;
+    outline: none;
+    border: 1px solid #cfb1a7;
+    border-radius: 5px;
+}
+select {
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+    background-color: aliceblue; 
+    border: 1px solid #cfb1a7; 
+    border-radius: 5px;
+    padding: 5px;
+    outline: none; 
+    cursor: pointer; 
+}
+select:hover {
+    border-color: #552f08; 
+}
+button{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+}
+#create{
+    width: 100%;
+    margin: 15px auto;
+    background-color: #f5d2c4;
+    color: #552f08;
+    border: 1px solid #b1ada8;
+    border-radius: 15px;
+    padding: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(184, 184, 184);
+}
+#create:hover{
+    background-color: #552f08;
+    color:#f5d2c4;
+}
+.logincontain{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center
+}
+#login{
+    margin: 0 10px;
+    padding: 5px;
+    width: 120px;
+    background-color: #f1ece1;
+    color: #281610;
+    border-radius: 15px;
+    border: 1px dashed #281610;
+}
+#login:hover{
+    background-color: #281610;
+    color: #f1ece1;
+}
+#back{
+    font-size: 14px;
+    text-decoration: none;
+    color: #61564c;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+#back:hover{
+    background-color: rgba(255, 255, 255, 0.7);;
+}
+
+footer{
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1c7b7;
+    height: 70px;
+    width: 100%;
+    box-shadow: -2px 0 10px 0 #78625b;
+}
+
+@media(max-width: 768px){
+    header{
+        height: 100px;
+    }
+    #create{
+        width: 100%;
+    }
+    h2{
+        font-size: 25px;
+    }
+    .input{
+        font-size: 14px;
+    }
+    button{
+        font-size: 14px;
+    }
+    .logincontain{
+        font-size: 14px;
+    }
+    #back{
+        font-size: 13px;
+    }
+    #createAccountForm{
+        width: 400px;
+    }
+    
+    footer{
+        font-size:15px;
+        background-color: #f1c7b7;
+        height: 100px;
+        width: 100%;
+        box-shadow: -2px 0 10px 0 #78625b;
+    }
+}
+@media(max-width: 468px){
+    header{
+        height: 60px;
+    }
+    #createAccountForm{
+        width: 85%;
+    }
+    h2{
+        margin-bottom: 0;
+        font-size: 20px;
+    }
+    .input{
+        font-size: 12px;
+    }
+    button{
+        font-size: 12px;
+    }
+    .logincontain{
+        font-size: 12px;
+    }
+    #back{
+        font-size: 11px;
+    }
+    footer{
+        font-size: 13px;
+        height: 50px;
+    }
+}
