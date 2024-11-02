@@ -1,0 +1,123 @@
+main{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+#feedback{
+    background-color: rgba(241, 227, 222, 0.6);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 20px 30px;
+    margin: 10px auto;
+    width: 500px;    
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+.input{
+    font-size: 15px;
+    margin: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.input input{
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    background-color: aliceblue;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 5px 5px;
+    outline: none;
+    border: 1px solid #cfb1a7;
+    border-radius: 5px;
+}
+.input textarea {
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    background-color: aliceblue;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 5px 5px;
+    outline: none;
+    border: 1px solid #cfb1a7;
+    border-radius: 5px;
+    resize: vertical;
+}
+button{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+}
+#sub{
+    width: 100%;
+    margin: 15px auto;
+    background-color: #f5d2c4;
+    color: #552f08;
+    border: 1px solid #b1ada8;
+    border-radius: 15px;
+    padding: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(184, 184, 184);
+}
+#sub:hover{
+    background-color: #552f08;
+    color:#f5d2c4;
+}
+#back{
+    font-size: 14px;
+    text-decoration: none;
+    color: #61564c;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+#back:hover{
+    background-color: rgba(255, 255, 255, 0.7);;
+}
+
+@media(max-width: 768px){
+    #sub{
+        width: 100%;
+    }
+    h2{
+        font-size: 25px;
+    }
+    .input{
+        font-size: 14px;
+    }
+    button{
+        font-size: 14px;
+    }
+    #back{
+        font-size: 13px;
+    }
+    #feedback{
+        width: 400px;
+    }
+}
+@media(max-width: 468px){
+    #feedback{
+        width: 85%;
+    }
+    h2{
+        margin-bottom: 0;
+        font-size: 20px;
+    }
+    .input{
+        font-size: 12px;
+    }
+    button{
+        font-size: 12px;
+    }
+    #back{
+        font-size: 11px;
+    }
+}

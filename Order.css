@@ -1,3 +1,45 @@
+.feedback{
+    margin: 40px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.feedback button{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    padding: 5px 25px;
+    font-size: 18px;
+    color: #552f08;
+    background-color: #fdf0eb;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 1px 1px 6px 0 rgb(162, 162, 162);
+    cursor: pointer;
+}
+.feedback button:hover{
+    border: 1px solid #552f08;
+    box-shadow: 1px 3px 5px 0 rgb(81, 81, 81);
+    transition: 0.3s;
+}
+@media (max-width: 850px){
+    .feedback{
+        margin: 30px;
+    }
+    .feedback button{
+        padding: 5px 20px;
+        font-size: 16px;
+    }
+}
+@media (max-width: 580px){
+    .feedback{
+        margin: 20px;
+        justify-content: center;
+    }
+    .feedback button{
+        padding: 4px 15px;
+        font-size: 14px;
+    }
+}
 *{
     margin: 0;
     padding: 0;

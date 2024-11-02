@@ -1,53 +1,5 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: 'Quicksand', sans-serif;
-    color: #552f08;
-    background-color:white;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-/*  */
-header{
-    background-color: #f5d2c4;
-    height: 200px;
-    display: flex;
-    border-bottom: 10px solid #eeac92;
-}
-.logo{
-    height: 100%;
-    width: 20%;
-}
-.logo img{
-    height: 100%;
-    width: auto;
-    margin-left: 45px;
-}
 .Home{
     border-bottom: 1px solid #552f08;
-}
-nav{
-    width: 80%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 20px;
-}
-nav a{
-    color: #552f08;
-    font-size: 28px;
-    text-decoration: none;
-    cursor: pointer;
-    padding: 5px 25px;
-    border-radius: 10px;
-}
-nav a:hover{
-    background-color: #552f08;
-    color: white;
 }
 /*  */
 main{
@@ -166,93 +118,7 @@ main article .bottom {
     margin-top: 40px;
 }
 
-
-
-/*  */
-footer{
-    height: fit-content;
-    padding: 10px 10px;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    background-color: #f5d2c4;
-    border-top: 10px solid #eeac92;
-}
-.end {
-    padding: 0 20px;
-    display: flex;
-}
-footer article{
-    text-align: justify;
-    margin-bottom: 36px;
-}
-footer article h2{
-    margin: 5px 0;;
-}
-/* ONE */
-footer .one{
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    margin-right: 35px;
-}
-.one .image{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-}
-.one .image img{
-    width: 35%;
-    height: auto;
-}
-.contact button{
-    margin: 0 3px;
-    height: 20px;
-    width: auto;
-    background: transparent;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.contact button:hover{
-    background-color: aliceblue;
-}
-.contact img{
-    height: 100%;
-    width: auto;
-}
-/* TWO */
-footer ul{
-    margin-left: 25px;
-}
-/*  */
-footer hr{
-    margin: 10px 0;
-}
-.rights{
-    color: #7e460e;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-
-
 @media (max-width: 1050px){
-    header{
-        height: 150px;
-        border-bottom: 8px solid #eeac92;
-    }
-    .logo img{
-        margin-left: 5px;
-    }
-    nav{
-        margin-right: 5px;
-    }
-    nav a{
-        font-size: 25px;
-        padding: 5px 10px;
-    }
     .first .left{
         font-size: 17px;
     }
@@ -273,17 +139,6 @@ footer hr{
     }
 }
 @media (max-width: 850px){
-    .logo img{
-        margin-left: 5px;
-    }
-    nav{
-        margin-right: 5px;
-    }
-    nav a{
-        font-size: 25px;
-        padding: 5px 10px;
-    }
-
     .first{
         flex-direction: column;
         margin-bottom: 10px;
@@ -322,62 +177,8 @@ footer hr{
     main article .bottom {
         margin-top: 20px;
     }
-
-
-
-
-    footer article{
-        margin-bottom: 25px;
-    }
-    footer article h2{
-        margin: 5px 0;;
-    }
-    /* ONE */
-    footer .one{
-        width: 100%;
-        margin: 0;
-    }
-    .one .image{
-        width: 100%;
-    }
-    .one .image img{
-        width: 25%;
-    }
-    .contact button{
-        margin: 0;
-    }
-    /* TWO */
-    footer ul{
-        margin-left: 35px;
-    }
-    .end{
-        flex-direction: column;
-    }
 }
 @media (max-width: 580px){
-    header{
-        height: fit-content;
-        border-bottom: 5px solid #eeac92;
-        flex-direction: column;
-    }
-    .logo{
-        height: 80px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    .logo img{
-        height: 100%;
-        width: auto;
-    }
-    nav{
-        width: 100%;
-    }
-    nav a{
-        margin: 15px auto;
-        font-size: 18px;
-        padding: 5px 8px;
-    }
     main{
         padding: 0 10px;
     }
@@ -425,16 +226,4 @@ footer hr{
     main article button{
         font-size: 15px;
     }
-    
-    
-    
-    footer{
-        border-top: 5px solid #eeac92;
-        font-size: 13px;
-        padding: 0;
-    }
-    .one .image{
-        margin-bottom: 10px;
-    }
-
 }

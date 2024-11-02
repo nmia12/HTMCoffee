@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="./feedback.css">
+    <link rel="stylesheet" href="./loginfeedback.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Poppins&family=Dancing+Script&family=Roboto&family=Lobster&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img src="./IMG/namelogo.png" alt="logo">
+    </header>
+    <main>
+        <form id="feedback">
+            <h2>Gửi phản hồi của bạn tới chúng tôi</h2>
+            <div class="input">
+                <div>
+                    <label for="name">Tên của bạn:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="gmail">Email:</label>
+                    <input type="email" id="gmail" name="gmail" required>
+                </div>
+                <div>
+                    <label for="mess">Phản hồi:</label>
+                    <textarea id="mess" name="mess" required rows="4" cols="50"></textarea>
+                </div>
+            </div>
+            <button id="sub" type="submit">Gửi</button>
+            
+            <a id="back" href="./Home.html">Quay lại trang chủ</a>
+        </form> 
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+    </footer>
+
+    <script src="feed.js"></script>
+</body>
+</html>
